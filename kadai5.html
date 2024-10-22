@@ -9,7 +9,12 @@
       {
 		  var bookmark = document.getElementById('bookmark');
 		  var row = document.createElement('li');
-		  // 課題：
+      var anchor = document.createElement('a');
+      anchor.href = document.getElementById('href').value;
+      anchor.innerHTML = document.getElementById("linkname").value;
+      row.appendChild(anchor);
+      bookmark.appendChild(row);
+      // 課題：
 		  // row の中に id:linkname のテキストを入れてから
 		  // bookmark に appendChild しなさい。
 
